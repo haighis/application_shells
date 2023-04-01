@@ -1,6 +1,5 @@
 import {Component, OnInit} from '@angular/core';
 import {Observable} from 'rxjs';
-import {User, UserService} from 'slim-api';
 //import {Item} from 'testapi/model/item';
 //import {ItemService} from 'testapi/api/item.service';
 import { Item, ItemService } from 'src/axios_client/index'
@@ -28,9 +27,7 @@ export class AppComponent implements OnInit {
   //  this.todoService.findTodos().subscribe(todos => (this.todos = todos));
   }
   constructor() { //private itemService: ItemService
-    let res = ItemService.findItems().then( res => {
-      console.log('res ', res)
-    });
+
     // this.itemService.findItems().subscribe( res => {
     //   this.itemAsAny = res;
     //   console.log('this.itemAsAny', this.itemAsAny)
